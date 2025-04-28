@@ -1,0 +1,2 @@
+# Kensei-s-Adventure
+Minigame
