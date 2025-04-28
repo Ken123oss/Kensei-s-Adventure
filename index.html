@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kensei's Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="titleScreen">
+  <h1>Kensei's Adventure</h1>
+  <button onclick="startGame()">PLAY</button>
+  <button onclick="showOptions()">OPTION</button>
+  <button onclick="location.href='index2.html'">Kensei's Adventure 2
+  </button>
+
+</div>
+
+<div id="optionScreen" style="display:none;">
+  <h2>OPTION</h2>
+  <div>
+    Jump: <select id="jumpKeySelect">
+      <option value="ArrowUp">ArrowUp</option>
+      <option value="Space">Space</option>
+      <option value="KeyW">W</option>
+    </select>
+  </div>
+  <div>
+    Left: <select id="leftKeySelect">
+      <option value="ArrowLeft">ArrowLeft</option>
+      <option value="KeyA">A</option>
+    </select>
+  </div>
+  <div>
+    Right: <select id="rightKeySelect">
+      <option value="ArrowRight">ArrowRight</option>
+      <option value="KeyD">D</option>
+    </select>
+  </div>
+  <div>
+    Crouch: <select id="downKeySelect">
+      <option value="ArrowDown">ArrowDown</option>
+      <option value="KeyS">S</option>
+    </select>
+  </div>
+  <br>
+  <button onclick="applyOptions()">BACK</button>
+</div>
+
+<div id="clearScreen" style="display:none;">
+  <h1>ALL STAGES CLEAR!!</h1>
+  <h3 id="clearStats"></h3>
+  <button onclick="backToTitle()">BACK</button>
+</div>
+
+<canvas id="gameCanvas" width="1000" height="400" style="display:none;"></canvas>
+<div id="controls" style="display:none;">
+  <button onclick="changeJumpKey()">Jump Key（Now：ArrowUp）</button>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+
+
+</html>

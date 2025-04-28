@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: #222;
+  font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+  display: block;
+  margin: auto;
+  background: #333;
+}
+
+#titleScreen, #optionScreen, #clearScreen {
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+#controls {
+  background: #444;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: Arial;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
